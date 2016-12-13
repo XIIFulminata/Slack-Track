@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Productively Unproductive</title>
+    
+<link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">    
+<link rel="stylesheet" href="style.css">
+    
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+    
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="leftIcons" class="col-sm-4">
+        <ul>
+          <li><a href="javascript:showMovies()"><img id="movieClick" src="Filter-Icons/png/film-reel.png"></a></li>
+            
+          <li><a href="javascript:showMusic()"><img id="musicClick" src="Filter-Icons/png/music-player-1.png"></a></li>
+            
+          <li><a href="javascript:showTelevision()"><img id="televisionClick" id="televisionClick" src="Filter-Icons/png/tv-screen-1.png"></a></li>
+            
+          <li><a href="javascript:showBooks()"><img id="bookClick" src="Filter-Icons/png/open-book.png"></a></li>
+            
+        </ul>
+        </div>
+        <div id="logo" class="col-sm-4">
+        <a href="index.html"><h2>PRODUCTIVE?</h2></a>
+            </div>
+        <div id="rightIcons" class="col-sm-4">
+        <ul>
+          <li><a href="help.asp"><img src="Settings-Icons/png/like-1.png"></a></li>
+          <li><a href="settings.asp"><img src="Settings-Icons/png/user-3.png"></a></li>
+          <li><a href="account.asp"><img src="Settings-Icons/png/settings-6.png"></a></li>
+          <li><a href="favorite.asp"><img src="Settings-Icons/png/info.png"></a></li>
+        </ul>
+        </div>
+    </div>
+    <div id="content" class="container-fluid">
+        <img data-toggle="modal" data-target="#myModal" src="AddContent.png">
+        <img src="Assets/Images/TeenWolf.jpg" class="television">
+        <img src="Assets/Images/WonderWoman.jpg" class="movie">
+        <img src="Assets/Images/Arrow.jpg" class="television">
+        <img src="Assets/Images/BlueExorcist.jpg" class="television">
+        <img src="Assets/Images/DragonBallSuper.png" class="television">
+        <img src="Assets/Images/LordOfShadows.jpg" class="book">
+        <img src="Assets/Images/RurouniKenshin.jpg" class="book">
+        <img src="Assets/Images/metallica-hardwired.jpeg" class="music">
+        <img src="Assets/Images/greenday-revolution.jpg" class="music">
+        <img src="Assets/Images/BeautyAndTheBeast.jpg" class="movie">
+        <!-- The Modal -->
+
+
+
+        
+        
+        </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add Content</h4>
+                </div>
+                <div class="modal-body">
+                    Name <input id="nameMod" type="text" name="Name"><br><br>
+                    Media Type <select id="mediaTypeMod">
+                    <option value="none"></option>
+                    <option value="movie">Movie</option>
+                    <option value="music">Album</option>
+                    <option value="television">TV Show</option>
+                    <option value="anime">Anime</option>
+                    <option value="book">Book</option>
+                    <option value="manga">Manga</option>
+                    <option value="comic">Comic</option>
+                    <!--eventually all will boil down to 4 classes, keeping unique values as potential future ID's-->
+                </select><br><br>
+                    Date <input id="dateMod" type="date" name="date" max="2030-01-01"><br><br>
+                    Recurring? <select id="recurringMod">
+                    <option value="none"></option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select><br><br>
+                    Favorite <input id="favoriteMod" type="checkbox" name="favorite"><br><br>
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:submitAddContent();"><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button></a>
+                    <button onclick="submitAddContent()" id="submitAddContentButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- 
+1.485 height to width
+resize to 220x327 or 259x684
+
+-->
+    
+</html>

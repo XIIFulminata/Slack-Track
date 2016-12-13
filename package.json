@@ -1,0 +1,8 @@
+{
+  "name": "foo",
+  "version": "0.0.1",
+  "description": "A packaged foo fooer for fooing foos",
+  "devDependencies": {
+    "gulp-connect": "^5.0.0"
+  }
+}

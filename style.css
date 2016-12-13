@@ -1,0 +1,81 @@
+#navbar {
+    background-color: slategray;
+    height: 80px;
+}
+
+#navbar img {
+    height: 60px;
+    width: 60px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#navbar a:hover {
+    background-color: dimgray;
+    color: white;
+    text-decoration: none;
+}
+
+/*.active {
+    background-color: dimgray;
+}
+*/
+/*
+#navbar li {
+    display: inline;
+}*/
+
+#leftIcons li {
+  float:left;
+}
+
+#rightIcons li {
+  float: right;
+}
+
+h2 {
+    /*display: inline;*/
+    font-family: 'Fredoka One', cursive;
+    margin-top: 15px;
+}
+
+#logo {
+    text-align: center;
+    height: 80px;
+}
+
+#logo a {
+    height: 80px;
+}
+
+#navbar div {
+    padding: 0;
+}
+
+#content img {
+    background-color:darkgrey; 
+    padding:0px;
+    width:220px;
+    height:327px;
+    /* percentage height works, see http://stackoverflow.com/questions/11243075/css-scale-height-to-match-width-possibly-with-a-formfactor to scale height*/
+    margin:20px 10px;
+}
+
+#content {
+    background-color: dimgray;
+    min-height: 874px;
+}
+
+#content .music {
+    height: 220px;
+}
