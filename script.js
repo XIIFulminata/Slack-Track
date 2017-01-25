@@ -56,9 +56,10 @@ function showBooks() {
             });
         /*\
         test append
-         */
+
         var input = "<p>fuckouttaahere</p>";
         $("#content").append(input);
+        */
 
     });
     
