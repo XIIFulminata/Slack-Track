@@ -57,7 +57,7 @@ function showBooks() {
         /*\
         test append
 
-        var input = "<p>fuckouttaahere</p>";
+        var input = "<p>nicerwords</p>";
         $("#content").append(input);
         */
 
